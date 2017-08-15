@@ -64,19 +64,22 @@ namespace XamarinWeather
 			public const int LayoutHTemperature = 2131034114;
 			
 			// aapt resource value: 0x7f050000
-			public const int LayoutV = 2131034112;
+			public const int LayoutVScroll = 2131034112;
+			
+			// aapt resource value: 0x7f050006
+			public const int btnGPS = 2131034118;
 			
 			// aapt resource value: 0x7f050001
-			public const int imageView1 = 2131034113;
+			public const int imgCurrentWeather = 2131034113;
 			
 			// aapt resource value: 0x7f050005
-			public const int spinner1 = 2131034117;
-			
-			// aapt resource value: 0x7f050003
-			public const int textView1 = 2131034115;
+			public const int spinnerCity = 2131034117;
 			
 			// aapt resource value: 0x7f050004
-			public const int textView2 = 2131034116;
+			public const int textDegC = 2131034116;
+			
+			// aapt resource value: 0x7f050003
+			public const int textTemp = 2131034115;
 			
 			static Id()
 			{

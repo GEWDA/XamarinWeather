@@ -2,39 +2,47 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
+    android:background="@android:color/white"
     android:layout_height="match_parent">
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/LayoutV"
+        android:id="@+id/LayoutVScroll"
         android:isScrollContainer="true">
         <ImageView
             android:src="@android:drawable/ic_menu_gallery"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/imageView1" />
+            android:id="@+id/imgCurrentWeather" />
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/LayoutHTemperature">
             <TextView
-                android:text="Large Text"
+                android:text="Temperature "
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:id="@+id/textView1"
+                android:id="@+id/textTemp"
                 android:layout_width="wrap_content"
+                android:textColor="@android:color/black"
                 android:layout_height="match_parent" />
             <TextView
                 android:text="Medium Text"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:id="@+id/textView2"
+                android:id="@+id/textDegC"
                 android:layout_width="wrap_content"
+                android:textColor="@android:color/black"
                 android:layout_height="match_parent" />
         </LinearLayout>
         <Spinner
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/spinner1" />
+            android:id="@+id/spinnerCity" />
+        <Button
+            android:text="GPS Mode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnGPS" />
     </LinearLayout>
 </LinearLayout>

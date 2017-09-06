@@ -41,6 +41,22 @@ namespace XamarinWeather
 			}
 		}
 		
+		public partial class Color
+		{
+			
+			// aapt resource value: 0x7f040000
+			public const int my_spinner_text_color = 2130968576;
+			
+			static Color()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Color()
+			{
+			}
+		}
+		
 		public partial class Drawable
 		{
 			
@@ -60,26 +76,26 @@ namespace XamarinWeather
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f050002
-			public const int LayoutHTemperature = 2131034114;
+			// aapt resource value: 0x7f070002
+			public const int LayoutHTemperature = 2131165186;
 			
-			// aapt resource value: 0x7f050000
-			public const int LayoutVScroll = 2131034112;
+			// aapt resource value: 0x7f070000
+			public const int LayoutVScroll = 2131165184;
 			
-			// aapt resource value: 0x7f050006
-			public const int btnGPS = 2131034118;
+			// aapt resource value: 0x7f070006
+			public const int btnGPS = 2131165190;
 			
-			// aapt resource value: 0x7f050001
-			public const int imgCurrentWeather = 2131034113;
+			// aapt resource value: 0x7f070001
+			public const int imgCurrentWeather = 2131165185;
 			
-			// aapt resource value: 0x7f050005
-			public const int spinnerCity = 2131034117;
+			// aapt resource value: 0x7f070005
+			public const int spinnerCity = 2131165189;
 			
-			// aapt resource value: 0x7f050004
-			public const int textDegC = 2131034116;
+			// aapt resource value: 0x7f070004
+			public const int textDegC = 2131165188;
 			
-			// aapt resource value: 0x7f050003
-			public const int textTemp = 2131034115;
+			// aapt resource value: 0x7f070003
+			public const int textTemp = 2131165187;
 			
 			static Id()
 			{
@@ -110,11 +126,11 @@ namespace XamarinWeather
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f040001
-			public const int ApplicationName = 2130968577;
+			// aapt resource value: 0x7f050001
+			public const int ApplicationName = 2131034113;
 			
-			// aapt resource value: 0x7f040000
-			public const int Hello = 2130968576;
+			// aapt resource value: 0x7f050000
+			public const int Hello = 2131034112;
 			
 			static String()
 			{
@@ -122,6 +138,28 @@ namespace XamarinWeather
 			}
 			
 			private String()
+			{
+			}
+		}
+		
+		public partial class Style
+		{
+			
+			// aapt resource value: 0x7f060000
+			public const int AppBaseTheme = 2131099648;
+			
+			// aapt resource value: 0x7f060001
+			public const int AppTheme = 2131099649;
+			
+			// aapt resource value: 0x7f060002
+			public const int mySpinnerStyle = 2131099650;
+			
+			static Style()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Style()
 			{
 			}
 		}

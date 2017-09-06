@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <style name="AppBaseTheme" parent="android:Theme.Light">
+  </style>
+
+  <style name="AppTheme" parent="AppBaseTheme">
+    <item name="android:spinnerDropDownItemStyle">@style/mySpinnerStyle</item>
+  </style>
+  <style name="mySpinnerStyle" parent="@android:style/Widget.Holo.DropDownItem.Spinner">
+    <item name="android:textColor">@color/my_spinner_text_color</item>
+  </style>
+
+</resources>

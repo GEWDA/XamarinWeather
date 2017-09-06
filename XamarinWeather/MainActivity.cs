@@ -18,9 +18,9 @@ namespace XamarinWeather
         public Timer weatherUpdater = new Timer();
         private TextView temperature;
         private ImageView imgCurrentWeather;
+        private TextView degCelc;
         private Spinner locationSpinner;
         private string StrMetService;
-        private string StrMetLocations;
         private bool locationSpinnerPopulated;
         public string[] Locations;
         private ArrayAdapter<String> cityArrayAdapter;
@@ -44,6 +44,8 @@ namespace XamarinWeather
             locationSpinner = FindViewById<Spinner>(Resource.Id.spinnerCity);
             imgCurrentWeather = FindViewById<ImageView>(Resource.Id.imgCurrentWeather);
             temperature = FindViewById<TextView>(Resource.Id.textTemp);
+            degCelc = FindViewById<TextView>(Resource.Id.textDegC);
+            degCelc.Text = "°C";
             weatherUpdater.Enabled = true;
             Log.Info("myDebug", "Things Initialized");
             //Toast.MakeText(this, "Select a Town or City", ToastLength.Long).Show();
@@ -52,7 +54,7 @@ namespace XamarinWeather
 
         private void GetWeather(object sender, ElapsedEventArgs e)
         {
-            weatherUpdater.Interval = 10000;
+            weatherUpdater.Interval = 10000;//todo: change the 1 to a 60 in final version
             RunOnUiThread(UpdateWeather);
 
         }
@@ -90,7 +92,7 @@ namespace XamarinWeather
             if (!locationSpinnerPopulated)
             {                
                 Log.Info("myDebug", "populating list");
-                StrMetLocations = StrMetService.Substring(StrMetService.IndexOf("<ul>")+4, StrMetService.IndexOf("</ul>") - StrMetService.IndexOf("<ul>")-9);
+                string StrMetLocations = StrMetService.Substring(StrMetService.IndexOf("<ul>")+4, StrMetService.IndexOf("</ul>") - StrMetService.IndexOf("<ul>")-9);
                 StrMetLocations = StrMetLocations.Replace("<li>", String.Empty);
                 StrMetLocations = StrMetLocations.Replace("</li>", "\n");
                 StrMetLocations = StrMetLocations.Replace("</a>", String.Empty);

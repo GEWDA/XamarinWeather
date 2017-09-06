@@ -19,26 +19,30 @@
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/LayoutHTemperature">
+            android:id="@+id/LayoutHTemperature"
+            android:gravity="center">
             <TextView
                 android:text="Temperature "
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:id="@+id/textTemp"
                 android:layout_width="wrap_content"
                 android:textColor="@android:color/black"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                android:gravity="center_vertical" />
             <TextView
                 android:text="Medium Text"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:id="@+id/textDegC"
                 android:layout_width="wrap_content"
                 android:textColor="@android:color/black"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                android:gravity="center_vertical" />
         </LinearLayout>
         <Spinner
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/spinnerCity" />
+            android:id="@+id/spinnerCity"
+            android:background="@android:drawable/alert_light_frame" />
         <Button
             android:text="GPS Mode"
             android:layout_width="match_parent"
